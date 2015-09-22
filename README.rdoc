@@ -1,0 +1,29 @@
+Welcome to Wunder Tea!
+
+We are purveyors of premium teas from around the world.
+
+To run the WunderTea application locally, follow these steps:
+
+1) Clone the WunderTea repository to a directory of your choice:
+
+  $ git clone https://github.com/lmmedina90/wunder-tea.git
+
+2) Ensure that Ruby (>= 2.2.3) and Rails (>= 4.2.4) are installed on your system:
+
+  $ ruby -v
+
+  $ rails -v
+
+3) Install all dependencies:
+
+  $ bundle install
+
+4) Create the MySQL2 database and migrate any existing schema:
+
+  $ rake db:create
+
+  $ rake db:migrate
+
+5) Run Rails application:
+
+  $ rails s
