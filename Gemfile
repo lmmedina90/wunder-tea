@@ -25,9 +25,15 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Fabrication for MiniTests
 gem 'fabrication'
-
 # Use Faker with Fabrication
 gem 'faker'
+#
+
+group :development, :test, :staging do
+  # Use Pry with MiniTests
+  gem 'pry-rails'
+end
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
