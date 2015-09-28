@@ -5,7 +5,7 @@
 <table>
   <thead>
     <tr>
-      <th>Type</th>
+      <th>Kind</th>
       <th>Quantity</th>
       <th>User</th>
       <th colspan="3"></th>
@@ -15,7 +15,7 @@
   <tbody>
     <% @teas.each do |tea| %>
       <tr>
-        <td><%= tea.type %></td>
+        <td><%= tea.kind %></td>
         <td><%= tea.quantity %></td>
         <td><%= tea.user_id %></td>
         <td><%= link_to 'Show', tea %></td>

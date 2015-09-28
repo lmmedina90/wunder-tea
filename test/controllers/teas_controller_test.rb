@@ -18,7 +18,7 @@ class TeasControllerTest < ActionController::TestCase
 
   test "should create tea" do
     assert_difference('Tea.count') do
-      post :create, tea: { quantity: @tea.quantity, type: @tea.type, user_id: @tea.user_id }
+      post :create, tea: { kind: @tea.kind, quantity: @tea.quantity, user_id: @tea.user_id }
     end
 
     assert_redirected_to tea_path(assigns(:tea))
@@ -35,7 +35,7 @@ class TeasControllerTest < ActionController::TestCase
   end
 
   test "should update tea" do
-    patch :update, id: @tea, tea: { quantity: @tea.quantity, type: @tea.type, user_id: @tea.user_id }
+    patch :update, id: @tea, tea: { kind: @tea.kind, quantity: @tea.quantity, user_id: @tea.user_id }
     assert_redirected_to tea_path(assigns(:tea))
   end
 
