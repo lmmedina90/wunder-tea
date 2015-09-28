@@ -3,6 +3,10 @@ require 'minitest/autorun'
 
 class UserTest < ActiveSupport::TestCase
 
+  #
+  # Validations
+  #
+
   describe "validations" do
     let(:user) { Fabricate(:user) }
 
