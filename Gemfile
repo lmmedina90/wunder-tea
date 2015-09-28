@@ -23,6 +23,7 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+gem 'minitest-reporters', '~> 1.1.2'
 # Use Fabrication for MiniTests
 gem 'fabrication'
 # Use Faker with Fabrication
